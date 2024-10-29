@@ -1,0 +1,6 @@
+export const PER_PLAYER_PUSH_FACTOR = 10;
+
+export const EVENT_GAME_STARTED = 'GAME_STARTED';
+export const EVENT_GAME_FINISHED = 'GAME_FINISHED';
+export const EVENT_GAME_PUSH = 'GAME_PUSH';
+export const EVENT_GAME_RESET = 'GAME_RESET';

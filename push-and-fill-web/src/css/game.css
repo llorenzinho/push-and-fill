@@ -1,0 +1,89 @@
+/* Center the game page content and add background styling */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff; /* White background */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 20px;
+  }
+  
+  /* Title styling */
+  .game-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #ff7e5f; /* Vibrant pink-orange color for the title */
+  }
+  
+  /* Glass container styling */
+  .glass-container {
+    width: 100px;
+    height: 300px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #ff7e5f; /* Border matches title color */
+    position: relative;
+  }
+  
+  /* Glass fill styling */
+  .glass-fill {
+    background-color: #feb47b; /* Orange color for the glass fill */
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: height 0.1s ease;
+  }
+  
+  /* Progress text styling */
+  .progress-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  /* Button styling with hover effect */
+  .fill-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #ff7e5f; /* Pink-orange button color */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  /* Button hover effect */
+  .fill-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Button active effect */
+  .fill-button:active {
+    transform: scale(0.98);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .game-title {
+      font-size: 2rem;
+    }
+    .progress-text {
+      font-size: 1rem;
+    }
+    .fill-button {
+      font-size: 1rem;
+      padding: 12px 24px;
+    }
+  }
+  

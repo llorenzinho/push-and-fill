@@ -1,0 +1,84 @@
+/* Center the container and align contents */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  padding: 20px; /* Adds padding around the edges */
+  text-align: center;
+  gap: 15px; /* Adds vertical spacing between elements */
+  box-sizing: border-box;
+}
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Animation container styling */
+.animation {
+  width: 50%; /* Relative width for responsiveness */
+  max-width: 250px; /* Maximum size for larger screens */
+  min-width: 150px; /* Minimum size for smaller screens */
+}
+
+/* Message styling */
+.message {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Instructions styling */
+.instructions {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  .message {
+    font-size: 0.9rem;
+  }
+  .instructions {
+    font-size: 0.8rem;
+  }
+}
+
+/* Media query for smartphones */
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  .animation {
+    width: 70%; /* Increase size on small screens for visibility */
+  }
+  .message {
+    font-size: 0.8rem;
+  }
+  .instructions {
+    font-size: 0.7rem;
+  }
+}
