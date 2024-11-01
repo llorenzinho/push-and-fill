@@ -2,7 +2,7 @@ import '../App.css';
 import React, { useState, useEffect } from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 import { createGame, startGame } from '../services/restService';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     // create a dynamic game ID using uuidv4

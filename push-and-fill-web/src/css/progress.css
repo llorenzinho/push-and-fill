@@ -1,0 +1,15 @@
+.container {
+    display: flex;                /* Use flexbox for layout */
+    justify-content: center;      /* Center items horizontally */
+    align-items: center;          /* Center items vertically */
+    flex-wrap: wrap;              /* Allow items to wrap to the next line */
+    max-width: 800px;            /* Set a max width for the container */
+    margin: 0 auto;              /* Center the container */
+  }
+  .column {
+    flex: 1;                    /* Allow columns to grow equally */
+    margin: 10px;              /* Space between columns */
+    padding: 20px;             /* Inner padding */
+    background: #f0f0f0;       /* Background color for each column */
+    border: 1px solid #ccc;    /* Optional border */
+  }

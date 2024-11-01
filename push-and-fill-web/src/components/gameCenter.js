@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Glasses from './glasses';
+import { Progress } from './progress';
 import { useNavigate, useParams } from 'react-router-dom';
 import { onProgressUpdate } from '../services/socketService';
 import { resetGame } from '../services/restService';
+import '../css/progress.css';
 
 
 const GameCenter = () => {
@@ -27,7 +28,10 @@ const GameCenter = () => {
   return (
     <div>
       <h1>Multiplayer Game</h1>
-      <Glasses beerLevel={beerLevel} waterLevel={waterLevel} />
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Progress team="BEER" />
+        <Progress team="WINE" />
+      </div>
       <button onClick={goHome}>Go Back</button>
     </div>
   );
